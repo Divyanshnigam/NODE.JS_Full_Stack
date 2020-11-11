@@ -1,0 +1,17 @@
+.box {
+    margin: 20px;
+    padding: 10px;
+    border: solid black;
+}
+
+#div1 {
+    background-color: lightblue;
+}
+
+#div2 {
+    background-color: red;
+}
+
+#div3 {
+    background-color: purple;
+}

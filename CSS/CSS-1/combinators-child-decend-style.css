@@ -1,0 +1,15 @@
+h2 + p { /*will make just one para p after heading h2 modified*/
+    color: purple;
+
+    font-weight: bold;
+}
+
+h2 ~ p {    /*will make just all para p after heading h2 modified*/
+    color: rgb(21, 255, 0);
+}
+section > p {
+    background-color: rgb(92, 23, 156);
+}
+section p {
+    font-family: monospace;
+}

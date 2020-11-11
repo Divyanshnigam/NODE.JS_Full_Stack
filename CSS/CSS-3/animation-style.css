@@ -1,0 +1,57 @@
+.container {
+    margin: 10px;
+    width: 800px;
+    height: 600px;
+    background-color: rgb(74, 4, 92);
+    font-size: 36px;
+    background-position: center;
+    color: rgb(192, 221, 30);
+    transition: ease-in;
+    
+}
+
+.item {
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    background-color: rgb(43, 45, 182);
+    border: solid rgb(195, 236, 9) 1px;
+    display: inline-block;
+    
+    border-radius: 10px;
+    box-shadow: rgb(189, 3, 3) 12px 12px 13px;
+
+    animation: bounce 2s;
+    animation-iteration-count: infinite;
+}
+
+.one {
+    animation-timing-function: ease-in;
+}
+.two {
+    animation-timing-function: ease-out;
+}
+.three {
+    animation-timing-function: linear;
+}
+
+.e {
+    animation-timing-function: linear;
+}
+
+.s {
+    animation-timing-function: ease-out;
+}
+
+
+@keyframes bounce {
+    0% {
+
+    }
+    50% {
+        transform: translateY(300px);
+    }
+    100% {
+
+    }
+}
