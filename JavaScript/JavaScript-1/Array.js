@@ -17,7 +17,7 @@ for(let i=0;i<5;i++)
 console.log(arr.indexOf("Mango"));
 
 console.log(arr.shift()); // remove from front
-console.log(arr.unshift("Kiwi"));  // add at first
+console.log(arr.unshift("Kiwi"));  // add at first 
 for(let i=0;i<5;i++)
 {
     console.log(arr[i]);
