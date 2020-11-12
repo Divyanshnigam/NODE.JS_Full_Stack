@@ -32,4 +32,4 @@ let s5='tab aab abbcd ba aab';
 console.log(s5.indexOf('ab'));  //0
 console.log(s5.indexOf('ab',1));//4
 console.log(s5.lastIndexOf('ab'));//17
-console.log(s5.lastIndexOf('ab'));//17
+console.log(s5.lastIndexOf('ab',16));//7
