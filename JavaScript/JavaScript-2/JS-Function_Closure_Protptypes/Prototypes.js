@@ -35,3 +35,6 @@ console.log(obj3.a)//10
 console.log(obj3.__proto__==obj2)//true
 console.log(obj3.__proto__.__proto__==obj1)//true
 console.log(obj3.__proto__.__proto__.__proto__==obj1)//false  .. no further proto
+
+obj1.a++;
+console.log(obj2.a)  //incremented
