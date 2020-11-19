@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="para" id="p1">
+        This is a para
+    </p>
+    <p class="para" id="p2">
+        This is <b>another</b> para
+    </p>
+    <p>
+        This is a third para
+    </p>
+    <div id="div1">
+        Some data in the div
+        <span>A span here</span>
+    </div>
+    <input id="inpbox">
+    <button id="btn">BUTTON</button>
+</body>
+</html>
+
+<!--
+
+    Function in JS Console...
+    
+
+document.getElementsByClassName('para')
+HTMLCollection(2) [p#p1.para, p#p2.para, p1: p#p1.para, p2: p#p2.para]
+
+let p2= document.getElementsByClassName('para') [1]
+undefined
+
+p2
+<p class=​"para" id=​"p2">​…​</p>​
+
+p2.innerText
+"This is another para"
+
+p2.innerHTML
+"
+        This is <b>another</b> para
+    "
+
+    p2.outerHTML
+"<p class="para" id="p2">
+        This is <b>another</b> para
+    </p>"
+
+p2.innerText="some new data"
+"some new data"
+
+p2.innerText="hello <b>bold</b> text."
+"hello <b>bold</b> text."
+
+p2.innerText
+"hello <b>bold</b> text."
+
+p2.innerHTML="hello now <b>bold</b>"
+"hello now <b>bold</b>"
+
+p2.innerText
+"hello now bold"
+
+p2.getAttribute('class')
+"para"
+
+p2.setAttribute('contenteditable',true)
+undefined
+
+p2.getAttribute('class')
+"para"
+
+p2.setAttribute('contenteditable',false)
+undefined
+
+VM906:1 Uncaught TypeError: Failed to execute 'setAttribute' on 'Element': 2 arguments required, but only 1 present.
+    at <anonymous>:1:4
+(anonymous) @ VM906:1
+
+p2.setAttribute('contenteditable',true)
+undefined
+
+p2.setAttribute('contenteditable',false)
+undefined
+
+p2.outerHTML
+"<p class="para" id="p2" contenteditable="false">hello now <b>bold&nbsp;</b></p>"
+
+let i= document.getElementById('inpbox')
+undefined
+
+i.innerHTML
+""
+
+i.innerText
+""
+i.value
+"dsdsdsd"
+
+i.value ='new stuff'
+"new stuff"
+
+i.setAttribute('type','email')
+undefined
+
+i.validity
+ValidityState {valueMissing: false, typeMismatch: true, patternMismatch: false, tooLong: false, tooShort: false, …}
+
+i.validity
+ValidityState {valueMissing: false, typeMismatch: false, patternMismatch: false, tooLong: false, tooShort: false, …}
+
+i.validity
+ValidityState {valueMissing: false, typeMismatch: false, patternMismatch: false, tooLong: false, tooShort: false, …}
+
+let btn =document.getElementById('btn')
+undefined
+
+btn
+<button id=​"btn">​BUTTON​</button>​
+
+btn.innerText='a'
+"a"
+
+btn.innerHTML="<b>BOLD</b>"
+"<b>BOLD</b>"
+
+-->
