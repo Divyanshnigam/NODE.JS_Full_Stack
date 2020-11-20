@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>list1</li>
+        <li>
+            molecule1
+            <ol>
+                <li>atom1</li>
+                <li>atom2</li>
+                <li>atom3</li>
+                <li>atom4</li>
+            </ol>
+        </li>
+
+        <li>
+            molecule2
+            <ol>
+                <li>atom4</li>
+                <li class="c1" >atom5</li>
+                <li>atom6</li>
+                <li>atom7</li>
+            </ol>
+        </li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+        <li>list5</li>
+    </ul>
+</body>
+</html>
+
+<!--
+    let atom5=temp5
+    undefined
+
+    atom5.parentElement
+    <ol>
+
+    atom5.parentElement.parentElement
+    <li>
+
+    atom5.parentElement.parentElement.previousElementSibling
+    <li>
+    
+    atom5.parentElement.parentElement.previousElementSibling.children
+    HTMLCollection[<ol> [] ]
+
+    atom5.parentElement.parentElement.previousElementSibling.children [0].children[2]
+    <li>
+
+    atom5.previousElementSibiling
+    <li>
+
+    atom5.nextElementSibiling
+    <li>
+    
+
+    atom5.parentElement.remove(atom5)
+    undifined
+
+    atom5.parentElement.parentElement
+    null
+
+    let list3=temp1
+    undifined
+
+    list3
+    <li>
+
+    list3.appendChild(atom5.parentElement)
+    <ol>  <_!--we can move object from one to another --_>
+
+    atom5.remove()
+    undefined
+
+    list3.previousElementSibling.previousElementSibling
+    <li>
+
+    list3.previousElementSibling.previousElementSibling.children[0]
+    <ol>
+
+    list3.previousElementSibling.previousElementSibling.children[0].appendChild(atom5)
+    <li>
+
+-->
