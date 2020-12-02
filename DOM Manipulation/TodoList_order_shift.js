@@ -19,7 +19,28 @@ window.onload = function(){
         let upBtn = document.createElement('button')
         upBtn.innerText = '⬆'
         upBtn.onclick= function(event){
+          //event.target => the up button 
+          //event.target.parentElement => the <li> item
+          //event.target.parentElement.parentElement => is the todolist
+          
+          event.target.parentElement.parentElement.insertBefore(
+            event.target.parentElement ,  // insert this element
+            event.target.parentElement.previousElementSibling    // before it's previous element.
+          )
+        }
 
+        // down button
+        let dnBtn = document.createElement('button')
+        dnBtn.innerText = '⬇'
+        dnBtn.onclick= function(event){
+          //event.target => the up button 
+          //event.target.parentElement => the <li> item
+          //event.target.parentElement.parentElement => is the todolist
+          
+          event.target.parentElement.parentElement.insertBefore(
+            event.target.parentElement.nextElementSibling ,  // insert next element
+            event.target.parentElement    // after current element.
+          )
         }
 
         //Add task text
@@ -29,6 +50,7 @@ window.onload = function(){
 
         li.appendChild(xbtn)
         li.appendChild(upBtn)
+        li.appendChild(dnBtn)
         li.appendChild(taskSpan)
         todolist.appendChild(li)
     
