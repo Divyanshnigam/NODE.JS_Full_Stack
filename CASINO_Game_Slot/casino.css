@@ -2,8 +2,13 @@
     --speed: 5;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    background-color: rgb(78, 87, 2);
+    background-color: rgb(195, 216, 8);
 }
 
 .machine {
