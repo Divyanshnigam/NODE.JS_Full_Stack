@@ -1,0 +1,72 @@
+:root {
+    --speed: 5;
+}
+
+body {
+    background-color: rgb(78, 87, 2);
+}
+
+.machine {
+    background-color: rgb(30, 3, 73);
+    border: solid rgb(136, 2, 2) 3px;
+    height: 300px;
+    width: 900px;
+    margin: 50px;
+    align-content: center;
+    display: flex;
+}
+
+.slot {
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.993);
+    border: solid rgb(21, 1, 75) 5px;
+    text-align: center;
+    font-size: 80pt;
+    line-height: 250px;
+}
+
+#inpSpeed {
+    font-size: 30pt;
+    margin-left: 30px;
+    width: 50px;
+}
+
+.slot>.value {
+    animation-name: slotspin;
+    animation-iteration-count: infinite;
+    animation-duration: calc(1s / var(--speed));
+}
+
+#spinbtn {
+    font-size: 10pt;
+    background-color: rgb(49, 6, 102);
+    height: 35pt;
+    width: 500pt;
+    margin-left: 30px;
+    font-size: 20pt;
+    font-weight: 1000;
+    font-stretch: expanded;
+}
+
+#stopbtn {
+    font-size: 10pt;
+    background-color: rgb(245, 3, 3);
+    height: 35pt;
+    width: 500pt;
+    margin-left: 30px;
+    font-size: 18pt;
+    font-weight: 1000;
+    font-stretch: expanded;
+}
+
+@keyframes slotspin {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(200px);
+    }
+}
