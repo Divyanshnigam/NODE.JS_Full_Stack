@@ -2,18 +2,13 @@
     --speed: 5;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
 body {
-    background-color: rgb(195, 216, 8);
+    background-color: rgb(255, 216, 41);
 }
 
 .machine {
-    background-color: rgb(30, 3, 73);
-    border: solid rgb(136, 2, 2) 3px;
+    background-color: rgb(36, 14, 136);
+    border: solid rgb(152, 138, 201) 5px;
     height: 300px;
     width: 900px;
     margin: 50px;
@@ -26,14 +21,15 @@ body {
     width: 250px;
     margin: 20px;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.993);
-    border: solid rgb(21, 1, 75) 5px;
+    background-color: rgba(5, 5, 5, 0.993);
+    border: solid rgb(152, 138, 201) 5px;
     text-align: center;
     font-size: 80pt;
     line-height: 250px;
 }
 
 #inpSpeed {
+    background-color: rgb(127, 146, 228);
     font-size: 30pt;
     margin-left: 30px;
     width: 50px;
@@ -45,8 +41,18 @@ body {
     animation-duration: calc(1s / var(--speed));
 }
 
+.set {
+    border: rgb(17, 19, 19);
+    color: rgb(253, 38, 38);
+    font-size: 30pt;
+    height: 35pt;
+    width: 500pt;
+    margin-left: 30px;
+    font-weight: 1000;
+    font-stretch: expanded;
+}
+
 #spinbtn {
-    font-size: 10pt;
     background-color: rgb(49, 6, 102);
     height: 35pt;
     width: 500pt;
@@ -57,8 +63,17 @@ body {
 }
 
 #stopbtn {
-    font-size: 10pt;
     background-color: rgb(245, 3, 3);
+    height: 35pt;
+    width: 500pt;
+    margin-left: 30px;
+    font-size: 18pt;
+    font-weight: 1000;
+    font-stretch: expanded;
+}
+
+#refresh {
+    background-color: rgb(3, 233, 15);
     height: 35pt;
     width: 500pt;
     margin-left: 30px;

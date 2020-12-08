@@ -5,7 +5,7 @@ let value3 = document.getElementById('value3')
 let inpSpeed = document.getElementById('inpSpeed')
 let spinbtn = document.getElementById('spinbtn')
 let stopbtn = document.getElementById('stopbtn')
-
+let refresh = document.getElementById('refresh')
 let values = [
     '🤍', '💜', '💛', '💖', '💚', '🖤', '🧡'
 ]
@@ -32,13 +32,18 @@ function updateAnimation(newSpeed) {
 inpSpeed.onchange = function(ev) {
 
     //document.documentElement => this is ":root of css"
-
-    document.documentElement.style.setProperty('--speed', ev.target.value)
     spinbtn.onclick = function() {
+        document.documentElement.style.setProperty('--speed', ev.target.value)
         updateAnimation(ev.target.value)
     }
 }
 
 stopbtn.onclick = function() {
+    document.documentElement.style.setProperty('--speed', 0)
+    clearInterval(animationId)
+}
 
+refresh.onclick = function() {
+
+    window.location.reload();
 }
