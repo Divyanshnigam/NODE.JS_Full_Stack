@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<!--
+    let a = { p:10 , q:'abcd', r:true}
+    undefined
+    
+    a
+    {p: 10, q: "abcd", r: true}
+    
+    let b = Object.create(a)
+    undefined
+    
+    let c = Object.create(b)
+    undefined
+    
+    b
+    {}
+    
+    b.p
+    10
+    
+    b.q
+    "abcd"
+    
+    b.__proto__
+    {p: 10, q: "abcd", r: true}
+    
+    c.__proto__
+    {}
+    
+    c.__proto__.__proto__
+    {p: 10, q: "abcd", r: true}
+    
+    b.__proto__ == a
+    true
+    
+    c.__proto__ == b
+    true
+    
+    a.isPrototypeOf(b)
+    true
+    
+    a.isPrototypeOf(c)
+    true
+    
+    let d = {k: 10}
+    undefined
+    
+    a.isPrototypeOf(b)
+    true
+    
+    a.isPrototypeOf(d)
+    false
+    
+    b.__proto__.p++
+    10
+    
+    a
+    {p: 11, q: "abcd", r: true}
+    
+    let x= "shdbhsu"
+    undefined
+    
+    x.__proto__== String.prototype
+    true
+    
+    (true).__proto__== Boolean.prototype
+    true
+    
+    (10).__proto__ == Number.prototype
+    true
+    
+    d
+    {k: 10}
+    
+    d.__proto__
+    {constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}
+    
+    d.__proto__ == Object.prototype
+    true
+    
+    let a ={x: 10}
+    undefined
+    
+    a
+    {x: 10}
+    
+    a.__proto__
+    {constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}
+    
+    a.__proto__.__proto__
+    null
+    
+    let b= "jdksfkns"
+    undefined
+    
+    b.__proto__
+    String {"", constructor: ƒ, anchor: ƒ, big: ƒ, blink: ƒ, …}
+    
+    b.__proto__.__proto__
+    {constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}
+    
+    Object.prototype.isPrototypeOf(String.prototype)
+    true
+    
+    Object.prototype.isPrototypeOf(Number.prototype)
+    true
+    
+    Object.prototype.isPrototypeOf(Boolean.prototype)
+    true
+    
+    Object.prototype.isPrototypeOf(Function.prototype)
+    true
+    
+    Object.prototype.isPrototypeOf(undefined)
+    false
+-->
