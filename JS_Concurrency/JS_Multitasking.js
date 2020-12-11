@@ -9,6 +9,8 @@ function helloSayer(times, name) {
     }, 100)
 }
 
+helloSayer(3, 'Divyansh');
+helloSayer(2, 'Nigam')
 module.exports = {
     helloSayer
 }
